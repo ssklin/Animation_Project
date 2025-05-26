@@ -1,56 +1,110 @@
----
+# Project Structure Overview
 
-globals.py: global variables
-util.py: helping function for the project
-
----
-
-Class for basic element to create the world:
-
-camera.py
-render_world.py
-ray.py
+A clear breakdown of the project files and their responsibilities.
 
 ---
 
-World light:
-light.py
-point_light.py
+## 📦 Globals & Utilities
+
+- **globals.py**  
+  Global variables used throughout the project.
+
+- **util.py**  
+  Helper functions for various project tasks.
 
 ---
 
-Shader class:
-shader.py
-sky_shader.py: A shader for the sky that uses a spherical coordinate system to extract color from a selected image.
-texture_shader.py: A shader that extracts color from the corresponding pixel in a selected image.
-hemi_sphere_shader.py: A shader that paints a sphere in black and white depending on the relative Y value to the center.
-flat_shader.py: A shader for plain color.
-phong_shader.py: A shader which applies ray tracing effect.
+## 🌍 Core World Elements
+
+- **camera.py**  
+  Camera class for scene viewing.
+
+- **render_world.py**  
+  Handles world rendering logic.
+
+- **ray.py**  
+  Ray tracing and ray-related operations.
 
 ---
 
-class for object tail wagging:
-forward_kinematics.py
+## 💡 Lighting
+
+- **light.py**  
+  Base class for light sources.
+
+- **point_light.py**  
+  Implementation of point light sources.
 
 ---
 
-class for lightening:
-lightning_segment.py
-lightning_shader.py
-lightning.py
+## 🎨 Shader Classes
+
+- **shader.py**  
+  Base shader class.
+
+- **sky_shader.py**  
+  Sky shader using spherical coordinates to sample colors from an image.
+
+- **texture_shader.py**  
+  Shader that samples pixel colors from a selected image.
+
+- **hemi_sphere_shader.py**  
+  Shades a hemisphere black or white based on Y value relative to the center.
+
+- **flat_shader.py**  
+  Simple flat color shader.
+
+- **phong_shader.py**  
+  Shader implementing the Phong ray tracing effect.
 
 ---
 
-class for creating objects:
-object.py
-cat.py
-panda.py
-hill.py
-mesh.py
-object.py
-plane.py
-sphere.py
+## 🐾 Animation & Movement
+
+- **forward_kinematics.py**  
+  Handles object tail wagging and forward kinematics.
 
 ---
 
-main.py
+## ⚡ Lightning Effects
+
+- **lightning_segment.py**  
+  Represents segments of lightning.
+
+- **lightning_shader.py**  
+  Shader for rendering lightning effects.
+
+- **lightning.py**  
+  Main logic for lightning effects.
+
+---
+
+## 🧩 Object Creation
+
+- **object.py**  
+  Base class for all objects.
+
+- **cat.py**  
+  Cat object implementation.
+
+- **panda.py**  
+  Panda object implementation.
+
+- **hill.py**  
+  Hill object implementation.
+
+- **mesh.py**  
+  Mesh object implementation.
+
+- **plane.py**  
+  Plane object implementation.
+
+- **sphere.py**  
+  Sphere object implementation.
+
+---
+
+## 🚀 Entry Point
+
+- **main.py**  
+  Main entry point of the project.
