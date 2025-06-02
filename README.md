@@ -2,6 +2,8 @@
 
 This project is a Python-based 3D rendering engine designed to create an animation. It utilizes ray tracing techniques to generate images, with support for various geometric primitives, shaders, lighting, and animation capabilities.
 
+![Animation](./animation.gif)
+
 ## I. Core Rendering Engine
 
 These files form the foundational components of the 3D rendering pipeline.
